@@ -1,0 +1,12 @@
+[
+  {"station_id": "aluva", "road": "NH 544 feeder", "congestion": 0.52},
+  {"station_id": "pulinchodu", "road": "Aluva bypass", "congestion": 0.44},
+  {"station_id": "companypady", "road": "Industrial corridor", "congestion": 0.48},
+  {"station_id": "edappally", "road": "Edappally junction", "congestion": 0.79},
+  {"station_id": "kaloor", "road": "Banerji road", "congestion": 0.86},
+  {"station_id": "mg_road", "road": "M.G. Road", "congestion": 0.81},
+  {"station_id": "maharajas", "road": "Park Avenue", "congestion": 0.73},
+  {"station_id": "vyttila", "road": "Vyttila mobility hub", "congestion": 0.9},
+  {"station_id": "thykoodam", "road": "SA Road", "congestion": 0.57},
+  {"station_id": "tripunithura", "road": "Tripunithura road", "congestion": 0.66}
+]

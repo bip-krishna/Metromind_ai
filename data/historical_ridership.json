@@ -1,0 +1,12 @@
+[
+  {"station_id": "aluva", "baseline": 0.52, "trend": 0.04},
+  {"station_id": "pulinchodu", "baseline": 0.43, "trend": 0.03},
+  {"station_id": "companypady", "baseline": 0.46, "trend": 0.03},
+  {"station_id": "edappally", "baseline": 0.72, "trend": 0.06},
+  {"station_id": "kaloor", "baseline": 0.78, "trend": 0.07},
+  {"station_id": "mg_road", "baseline": 0.7, "trend": 0.05},
+  {"station_id": "maharajas", "baseline": 0.62, "trend": 0.04},
+  {"station_id": "vyttila", "baseline": 0.76, "trend": 0.06},
+  {"station_id": "thykoodam", "baseline": 0.48, "trend": 0.03},
+  {"station_id": "tripunithura", "baseline": 0.55, "trend": 0.04}
+]

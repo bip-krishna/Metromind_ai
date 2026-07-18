@@ -38,6 +38,10 @@ Returns current alerts sorted by severity.
 
 Returns the weather layer used by the digital twin.
 
+## POST /weather/refresh
+
+Fetches live Kochi weather from Open-Meteo, recalculates station health, predictions, alerts, and recommendations, persists `city_state.json`, and returns the refreshed weather payload. If Open-Meteo is unreachable, the backend keeps using `data/weather.json` and marks `live_available` as `false`.
+
 ## POST /simulate
 
 Body:
@@ -63,4 +67,3 @@ Body:
 ```
 
 The AI layer receives only the current digital twin state and must explain, not calculate.
-

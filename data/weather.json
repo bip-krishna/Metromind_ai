@@ -1,0 +1,21 @@
+{
+  "condition": "Humid with scattered showers",
+  "temperature_c": 28.4,
+  "apparent_temperature_c": 31.8,
+  "humidity_percent": 82,
+  "rain_probability": 0.54,
+  "precipitation_mm": 1.2,
+  "cloud_cover_percent": 76,
+  "wind_kph": 16,
+  "wind_gust_kph": 28,
+  "weather_code": 61,
+  "severity": 0.43,
+  "source": "mock",
+  "live_available": false,
+  "location": {
+    "name": "Kochi, Kerala",
+    "latitude": 9.9312,
+    "longitude": 76.2673
+  },
+  "updated_at": "2026-07-18T18:20:00+05:30"
+}

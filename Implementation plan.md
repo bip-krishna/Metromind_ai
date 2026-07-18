@@ -602,7 +602,7 @@ Interactive GIS behaves like a metro operations console.
 
 Provide natural language interaction.
 
-Integrate Groq.
+Integrate Groq
 
 System Prompt
 
@@ -621,6 +621,7 @@ Summarize network
 Explain alerts
 
 Justify recommendations
+
 
 Compare stations
 
@@ -792,3 +793,5 @@ Never proceed to the next stage until the current stage satisfies all validation
 | Train Position    | Yes      | Simulation Engine     | Derived    | Dynamic |
 | Parking Occupancy | Yes      | Simulation Engine     | Derived    | Dynamic |
 | Alerts            | Yes      | Recommendation Engine | Generated  | Dynamic |
+
+

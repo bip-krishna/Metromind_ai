@@ -1,0 +1,5 @@
+[
+  {"train_id": "T-101", "next_station_id": "kaloor", "eta_minutes": 4},
+  {"train_id": "T-117", "next_station_id": "kaloor", "eta_minutes": 5},
+  {"train_id": "T-122", "next_station_id": "maharajas", "eta_minutes": 6}
+]

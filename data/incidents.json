@@ -1,0 +1,4 @@
+[
+  {"id": "INC-302", "station_id": "kaloor", "type": "Crowd control", "severity": 0.18, "status": "monitoring"},
+  {"id": "INC-315", "station_id": "tripunithura", "type": "Escalator slowdown", "severity": 0.04, "status": "open"}
+]

@@ -1,0 +1,947 @@
+{
+  "stations": [
+    {
+      "id": "aluva",
+      "name": "Aluva",
+      "lat": 10.1076,
+      "lng": 76.3512,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.58,
+      "traffic_index": 0.52,
+      "parking_occupancy": 0.6609,
+      "weather_severity": 0.36,
+      "incident_severity": 0.05,
+      "neighbours": [
+        "pulinchodu"
+      ],
+      "health_score": 0.4521,
+      "health_status": "healthy"
+    },
+    {
+      "id": "pulinchodu",
+      "name": "Pulinchodu",
+      "lat": 10.0913,
+      "lng": 76.3458,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.47,
+      "traffic_index": 0.44,
+      "parking_occupancy": 0.5333,
+      "weather_severity": 0.34,
+      "incident_severity": 0.0,
+      "neighbours": [
+        "aluva",
+        "companypady"
+      ],
+      "health_score": 0.3665,
+      "health_status": "healthy"
+    },
+    {
+      "id": "companypady",
+      "name": "Companypady",
+      "lat": 10.0716,
+      "lng": 76.3371,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.51,
+      "traffic_index": 0.48,
+      "parking_occupancy": 0.4923,
+      "weather_severity": 0.3367,
+      "incident_severity": 0.0,
+      "neighbours": [
+        "pulinchodu",
+        "edappally"
+      ],
+      "health_score": 0.382,
+      "health_status": "healthy"
+    },
+    {
+      "id": "edappally",
+      "name": "Edappally",
+      "lat": 10.0261,
+      "lng": 76.3083,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.82,
+      "traffic_index": 0.79,
+      "parking_occupancy": 0.8788,
+      "weather_severity": 0.41,
+      "incident_severity": 0.1,
+      "neighbours": [
+        "companypady",
+        "kaloor"
+      ],
+      "health_score": 0.6378,
+      "health_status": "warning"
+    },
+    {
+      "id": "kaloor",
+      "name": "Kaloor",
+      "lat": 9.9947,
+      "lng": 76.2927,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.91,
+      "traffic_index": 0.86,
+      "parking_occupancy": 0.8308,
+      "weather_severity": 0.43,
+      "incident_severity": 0.18,
+      "neighbours": [
+        "edappally",
+        "mg_road"
+      ],
+      "health_score": 0.6941,
+      "health_status": "warning"
+    },
+    {
+      "id": "mg_road",
+      "name": "M.G. Road",
+      "lat": 9.9767,
+      "lng": 76.2833,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.76,
+      "traffic_index": 0.81,
+      "parking_occupancy": 0.7222,
+      "weather_severity": 0.42,
+      "incident_severity": 0.05,
+      "neighbours": [
+        "kaloor",
+        "maharajas"
+      ],
+      "health_score": 0.5883,
+      "health_status": "warning"
+    },
+    {
+      "id": "maharajas",
+      "name": "Maharaja's College",
+      "lat": 9.9701,
+      "lng": 76.2825,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.69,
+      "traffic_index": 0.73,
+      "parking_occupancy": 0.64,
+      "weather_severity": 0.4,
+      "incident_severity": 0.0,
+      "neighbours": [
+        "mg_road",
+        "vyttila"
+      ],
+      "health_score": 0.5235,
+      "health_status": "healthy"
+    },
+    {
+      "id": "vyttila",
+      "name": "Vyttila",
+      "lat": 9.9674,
+      "lng": 76.3187,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.87,
+      "traffic_index": 0.9,
+      "parking_occupancy": 0.9308,
+      "weather_severity": 0.45,
+      "incident_severity": 0.08,
+      "neighbours": [
+        "maharajas",
+        "thykoodam"
+      ],
+      "health_score": 0.6851,
+      "health_status": "warning"
+    },
+    {
+      "id": "thykoodam",
+      "name": "Thykoodam",
+      "lat": 9.9529,
+      "lng": 76.3216,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.54,
+      "traffic_index": 0.57,
+      "parking_occupancy": 0.5824,
+      "weather_severity": 0.39,
+      "incident_severity": 0.0,
+      "neighbours": [
+        "vyttila",
+        "tripunithura"
+      ],
+      "health_score": 0.4294,
+      "health_status": "healthy"
+    },
+    {
+      "id": "tripunithura",
+      "name": "S. N. Junction Tripunithura",
+      "lat": 9.9471,
+      "lng": 76.3505,
+      "line": "Blue Line",
+      "passenger_occupancy": 0.62,
+      "traffic_index": 0.66,
+      "parking_occupancy": 0.7103,
+      "weather_severity": 0.37,
+      "incident_severity": 0.04,
+      "neighbours": [
+        "thykoodam"
+      ],
+      "health_score": 0.5005,
+      "health_status": "healthy"
+    }
+  ],
+  "route": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kochi Metro Blue Line Operations Corridor"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              76.3512,
+              10.1076
+            ],
+            [
+              76.3458,
+              10.0913
+            ],
+            [
+              76.3371,
+              10.0716
+            ],
+            [
+              76.3083,
+              10.0261
+            ],
+            [
+              76.2927,
+              9.9947
+            ],
+            [
+              76.2833,
+              9.9767
+            ],
+            [
+              76.2825,
+              9.9701
+            ],
+            [
+              76.3187,
+              9.9674
+            ],
+            [
+              76.3216,
+              9.9529
+            ],
+            [
+              76.3505,
+              9.9471
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "parking": [
+    {
+      "station_id": "aluva",
+      "capacity": 460,
+      "occupied": 304
+    },
+    {
+      "station_id": "pulinchodu",
+      "capacity": 120,
+      "occupied": 64
+    },
+    {
+      "station_id": "companypady",
+      "capacity": 130,
+      "occupied": 64
+    },
+    {
+      "station_id": "edappally",
+      "capacity": 330,
+      "occupied": 290
+    },
+    {
+      "station_id": "kaloor",
+      "capacity": 260,
+      "occupied": 216
+    },
+    {
+      "station_id": "mg_road",
+      "capacity": 180,
+      "occupied": 130
+    },
+    {
+      "station_id": "maharajas",
+      "capacity": 150,
+      "occupied": 96
+    },
+    {
+      "station_id": "vyttila",
+      "capacity": 520,
+      "occupied": 484
+    },
+    {
+      "station_id": "thykoodam",
+      "capacity": 170,
+      "occupied": 99
+    },
+    {
+      "station_id": "tripunithura",
+      "capacity": 290,
+      "occupied": 206
+    }
+  ],
+  "traffic": [
+    {
+      "station_id": "aluva",
+      "road": "NH 544 feeder",
+      "congestion": 0.52
+    },
+    {
+      "station_id": "pulinchodu",
+      "road": "Aluva bypass",
+      "congestion": 0.44
+    },
+    {
+      "station_id": "companypady",
+      "road": "Industrial corridor",
+      "congestion": 0.48
+    },
+    {
+      "station_id": "edappally",
+      "road": "Edappally junction",
+      "congestion": 0.79
+    },
+    {
+      "station_id": "kaloor",
+      "road": "Banerji road",
+      "congestion": 0.86
+    },
+    {
+      "station_id": "mg_road",
+      "road": "M.G. Road",
+      "congestion": 0.81
+    },
+    {
+      "station_id": "maharajas",
+      "road": "Park Avenue",
+      "congestion": 0.73
+    },
+    {
+      "station_id": "vyttila",
+      "road": "Vyttila mobility hub",
+      "congestion": 0.9
+    },
+    {
+      "station_id": "thykoodam",
+      "road": "SA Road",
+      "congestion": 0.57
+    },
+    {
+      "station_id": "tripunithura",
+      "road": "Tripunithura road",
+      "congestion": 0.66
+    }
+  ],
+  "weather": {
+    "condition": "Partly cloudy",
+    "temperature_c": 25.1,
+    "apparent_temperature_c": 30.9,
+    "humidity_percent": 93,
+    "rain_probability": 0.78,
+    "precipitation_mm": 0.0,
+    "cloud_cover_percent": 100,
+    "wind_kph": 1.3,
+    "wind_gust_kph": 8.3,
+    "weather_code": 3,
+    "severity": 0.3367,
+    "source": "open-meteo",
+    "live_available": true,
+    "location": {
+      "name": "Kochi, Kerala",
+      "latitude": 9.9312,
+      "longitude": 76.2673
+    },
+    "updated_at": "2026-07-19T01:15",
+    "fetched_at": "2026-07-19T01:26:01.179680"
+  },
+  "events": [
+    {
+      "id": "isl_kaloor_evening",
+      "name": "Football match near Kaloor",
+      "station_id": "kaloor",
+      "impact": 0.18,
+      "starts_at": "2026-07-18T19:30:00+05:30",
+      "ends_at": "2026-07-18T22:30:00+05:30"
+    },
+    {
+      "id": "mall_peak_edappally",
+      "name": "Weekend mall surge",
+      "station_id": "edappally",
+      "impact": 0.11,
+      "starts_at": "2026-07-18T17:00:00+05:30",
+      "ends_at": "2026-07-18T21:00:00+05:30"
+    }
+  ],
+  "historical_ridership": [
+    {
+      "station_id": "aluva",
+      "baseline": 0.52,
+      "trend": 0.04
+    },
+    {
+      "station_id": "pulinchodu",
+      "baseline": 0.43,
+      "trend": 0.03
+    },
+    {
+      "station_id": "companypady",
+      "baseline": 0.46,
+      "trend": 0.03
+    },
+    {
+      "station_id": "edappally",
+      "baseline": 0.72,
+      "trend": 0.06
+    },
+    {
+      "station_id": "kaloor",
+      "baseline": 0.78,
+      "trend": 0.07
+    },
+    {
+      "station_id": "mg_road",
+      "baseline": 0.7,
+      "trend": 0.05
+    },
+    {
+      "station_id": "maharajas",
+      "baseline": 0.62,
+      "trend": 0.04
+    },
+    {
+      "station_id": "vyttila",
+      "baseline": 0.76,
+      "trend": 0.06
+    },
+    {
+      "station_id": "thykoodam",
+      "baseline": 0.48,
+      "trend": 0.03
+    },
+    {
+      "station_id": "tripunithura",
+      "baseline": 0.55,
+      "trend": 0.04
+    }
+  ],
+  "trains": [
+    {
+      "id": "T-101",
+      "lat": 10.0261,
+      "lng": 76.3083,
+      "station_id": "edappally",
+      "delay_minutes": 0,
+      "direction": "Tripunithura"
+    },
+    {
+      "id": "T-117",
+      "lat": 9.9767,
+      "lng": 76.2833,
+      "station_id": "mg_road",
+      "delay_minutes": 3,
+      "direction": "Aluva"
+    },
+    {
+      "id": "T-122",
+      "lat": 9.9674,
+      "lng": 76.3187,
+      "station_id": "vyttila",
+      "delay_minutes": 7,
+      "direction": "Aluva"
+    }
+  ],
+  "train_schedule": [
+    {
+      "train_id": "T-101",
+      "next_station_id": "kaloor",
+      "eta_minutes": 4
+    },
+    {
+      "train_id": "T-117",
+      "next_station_id": "kaloor",
+      "eta_minutes": 5
+    },
+    {
+      "train_id": "T-122",
+      "next_station_id": "maharajas",
+      "eta_minutes": 6
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-302",
+      "station_id": "kaloor",
+      "type": "Crowd control",
+      "severity": 0.18,
+      "status": "monitoring"
+    },
+    {
+      "id": "INC-315",
+      "station_id": "tripunithura",
+      "type": "Escalator slowdown",
+      "severity": 0.04,
+      "status": "open"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALERT-edappally-station-crowded",
+      "station_id": "edappally",
+      "station_name": "Edappally",
+      "title": "Station crowded",
+      "level": "High",
+      "created_at": "2026-07-19T01:26:01.181480"
+    },
+    {
+      "id": "ALERT-kaloor-passenger-overflow",
+      "station_id": "kaloor",
+      "station_name": "Kaloor",
+      "title": "Passenger overflow",
+      "level": "Critical",
+      "created_at": "2026-07-19T01:26:01.181485"
+    },
+    {
+      "id": "ALERT-vyttila-station-crowded",
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "title": "Station crowded",
+      "level": "High",
+      "created_at": "2026-07-19T01:26:01.181489"
+    },
+    {
+      "id": "ALERT-vyttila-train-delay:-t-122",
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "title": "Train delay: T-122",
+      "level": "High",
+      "created_at": "2026-07-19T01:26:01.181494"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "REC-edappally-deploy-additional-platform-marshals",
+      "station_id": "edappally",
+      "station_name": "Edappally",
+      "issue": "Passenger overcrowding risk",
+      "action": "Deploy additional platform marshals",
+      "directive": "Deploy additional platform marshals",
+      "priority": "High",
+      "reason": "Passenger forecast exceeds 90%; uncontrolled platform buildup is likely.",
+      "expected_impact": "Reduce platform dwell time and maintain safe passenger circulation.",
+      "owner": "Station Controller and Platform Supervisor",
+      "timeline": "Within 10 minutes",
+      "confidence": 0.88
+    },
+    {
+      "id": "REC-edappally-activate-overflow-parking-protocol",
+      "station_id": "edappally",
+      "station_name": "Edappally",
+      "issue": "Parking saturation risk",
+      "action": "Activate overflow parking protocol",
+      "directive": "Activate overflow parking protocol",
+      "priority": "Medium",
+      "reason": "Parking forecast exceeds 95%; queue spillback may affect station approach roads.",
+      "expected_impact": "Preserve station access and prevent road-side congestion near entry gates.",
+      "owner": "Parking Operations Lead",
+      "timeline": "Within 20 minutes",
+      "confidence": 0.82
+    },
+    {
+      "id": "REC-kaloor-deploy-additional-platform-marshals",
+      "station_id": "kaloor",
+      "station_name": "Kaloor",
+      "issue": "Passenger overcrowding risk",
+      "action": "Deploy additional platform marshals",
+      "directive": "Deploy additional platform marshals",
+      "priority": "High",
+      "reason": "Passenger forecast exceeds 90%; uncontrolled platform buildup is likely.",
+      "expected_impact": "Reduce platform dwell time and maintain safe passenger circulation.",
+      "owner": "Station Controller and Platform Supervisor",
+      "timeline": "Within 10 minutes",
+      "confidence": 0.88
+    },
+    {
+      "id": "REC-mg_road-deploy-additional-platform-marshals",
+      "station_id": "mg_road",
+      "station_name": "M.G. Road",
+      "issue": "Passenger overcrowding risk",
+      "action": "Deploy additional platform marshals",
+      "directive": "Deploy additional platform marshals",
+      "priority": "High",
+      "reason": "Passenger forecast exceeds 90%; uncontrolled platform buildup is likely.",
+      "expected_impact": "Reduce platform dwell time and maintain safe passenger circulation.",
+      "owner": "Station Controller and Platform Supervisor",
+      "timeline": "Within 10 minutes",
+      "confidence": 0.88
+    },
+    {
+      "id": "REC-vyttila-deploy-additional-platform-marshals",
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "issue": "Passenger overcrowding risk",
+      "action": "Deploy additional platform marshals",
+      "directive": "Deploy additional platform marshals",
+      "priority": "High",
+      "reason": "Passenger forecast exceeds 90%; uncontrolled platform buildup is likely.",
+      "expected_impact": "Reduce platform dwell time and maintain safe passenger circulation.",
+      "owner": "Station Controller and Platform Supervisor",
+      "timeline": "Within 10 minutes",
+      "confidence": 0.88
+    },
+    {
+      "id": "REC-vyttila-activate-overflow-parking-protocol",
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "issue": "Parking saturation risk",
+      "action": "Activate overflow parking protocol",
+      "directive": "Activate overflow parking protocol",
+      "priority": "Medium",
+      "reason": "Parking forecast exceeds 95%; queue spillback may affect station approach roads.",
+      "expected_impact": "Preserve station access and prevent road-side congestion near entry gates.",
+      "owner": "Parking Operations Lead",
+      "timeline": "Within 20 minutes",
+      "confidence": 0.82
+    },
+    {
+      "id": "REC-vyttila-initiate-platform-delay-communication",
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "issue": "Train delay passenger buildup",
+      "action": "Initiate platform delay communication",
+      "directive": "Initiate platform delay communication",
+      "priority": "High",
+      "reason": "Train T-122 is delayed by 7 minutes.",
+      "expected_impact": "Reduce passenger uncertainty and prevent secondary crowding.",
+      "owner": "Train Controller and Station Announcer",
+      "timeline": "Immediately; repeat every 5 minutes",
+      "confidence": 0.84
+    }
+  ],
+  "generated_at": "2026-07-19T01:26:01.181512",
+  "predictions": [
+    {
+      "station_id": "aluva",
+      "station_name": "Aluva",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.6199,
+      "traffic_index": 0.5607,
+      "parking_occupancy": 0.6753,
+      "health_score": 0.4764,
+      "health_status": "healthy",
+      "crowding": "moderate",
+      "confidence": 0.855,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.6199,
+        "current": 0.58,
+        "historical_effect": 0.012,
+        "time_profile": 0.429,
+        "weather_effect": 0.0239,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0,
+        "metro_stress_feedback": 0.004,
+        "incident_effect": 0.004,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Stable operating pattern"
+      ]
+    },
+    {
+      "station_id": "pulinchodu",
+      "station_name": "Pulinchodu",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.5016,
+      "traffic_index": 0.4733,
+      "parking_occupancy": 0.5447,
+      "health_score": 0.3859,
+      "health_status": "healthy",
+      "crowding": "normal",
+      "confidence": 0.866,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.5016,
+        "current": 0.47,
+        "historical_effect": 0.0094,
+        "time_profile": 0.429,
+        "weather_effect": 0.0221,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0,
+        "metro_stress_feedback": 0.0,
+        "incident_effect": 0.0,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Stable operating pattern"
+      ]
+    },
+    {
+      "station_id": "companypady",
+      "station_name": "Companypady",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.5948,
+      "traffic_index": 0.5236,
+      "parking_occupancy": 0.5288,
+      "health_score": 0.4259,
+      "health_status": "healthy",
+      "crowding": "moderate",
+      "confidence": 0.8479,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.5948,
+        "current": 0.51,
+        "historical_effect": 0.0086,
+        "time_profile": 0.429,
+        "weather_effect": 0.0219,
+        "event_effect": 0.05,
+        "neighbour_effect": 0.0,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0044,
+        "metro_stress_feedback": 0.0,
+        "incident_effect": 0.0,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Stable operating pattern"
+      ]
+    },
+    {
+      "station_id": "edappally",
+      "station_name": "Edappally",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 1.0,
+      "traffic_index": 0.9052,
+      "parking_occupancy": 0.9712,
+      "health_score": 0.7377,
+      "health_status": "warning",
+      "crowding": "severe",
+      "confidence": 0.7835,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 1.0,
+        "current": 0.82,
+        "historical_effect": 0.0172,
+        "time_profile": 0.429,
+        "weather_effect": 0.0285,
+        "event_effect": 0.2303,
+        "neighbour_effect": 0.0072,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0344,
+        "metro_stress_feedback": 0.0459,
+        "incident_effect": 0.008,
+        "capacity_damping": 0.1456
+      },
+      "drivers": [
+        "Nearby event demand",
+        "Road congestion diverting demand to metro",
+        "Metro stress increasing station-area road pressure",
+        "Parking saturation"
+      ]
+    },
+    {
+      "station_id": "kaloor",
+      "station_name": "Kaloor",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 1.0,
+      "traffic_index": 0.9597,
+      "parking_occupancy": 0.8932,
+      "health_score": 0.7549,
+      "health_status": "warning",
+      "crowding": "severe",
+      "confidence": 0.7575,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 1.0,
+        "current": 0.91,
+        "historical_effect": 0.0189,
+        "time_profile": 0.429,
+        "weather_effect": 0.0304,
+        "event_effect": 0.2501,
+        "neighbour_effect": 0.0222,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.048,
+        "metro_stress_feedback": 0.0465,
+        "incident_effect": 0.0144,
+        "capacity_damping": 0.294
+      },
+      "drivers": [
+        "Nearby event demand",
+        "Road congestion diverting demand to metro",
+        "Metro stress increasing station-area road pressure",
+        "Road congestion"
+      ]
+    },
+    {
+      "station_id": "mg_road",
+      "station_name": "M.G. Road",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.9434,
+      "traffic_index": 0.9079,
+      "parking_occupancy": 0.8027,
+      "health_score": 0.6842,
+      "health_status": "warning",
+      "crowding": "severe",
+      "confidence": 0.799,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.9434,
+        "current": 0.76,
+        "historical_effect": 0.0163,
+        "time_profile": 0.429,
+        "weather_effect": 0.0295,
+        "event_effect": 0.1203,
+        "neighbour_effect": 0.0256,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0396,
+        "metro_stress_feedback": 0.0269,
+        "incident_effect": 0.004,
+        "capacity_damping": 0.0519
+      },
+      "drivers": [
+        "Nearby event demand",
+        "Road congestion diverting demand to metro",
+        "Road congestion"
+      ]
+    },
+    {
+      "station_id": "maharajas",
+      "station_name": "Maharaja's College",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.8273,
+      "traffic_index": 0.7965,
+      "parking_occupancy": 0.6894,
+      "health_score": 0.5923,
+      "health_status": "warning",
+      "crowding": "high",
+      "confidence": 0.8435,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.8273,
+        "current": 0.69,
+        "historical_effect": 0.0112,
+        "time_profile": 0.429,
+        "weather_effect": 0.0276,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0262,
+        "train_delay_effect": 0.0408,
+        "traffic_effect": 0.0316,
+        "metro_stress_feedback": 0.0066,
+        "incident_effect": 0.0,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Train delay platform buildup",
+        "Road congestion diverting demand to metro"
+      ]
+    },
+    {
+      "station_id": "vyttila",
+      "station_name": "Vyttila",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.9849,
+      "traffic_index": 1.0,
+      "parking_occupancy": 0.9561,
+      "health_score": 0.7491,
+      "health_status": "warning",
+      "crowding": "severe",
+      "confidence": 0.8056,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.9849,
+        "current": 0.87,
+        "historical_effect": 0.0163,
+        "time_profile": 0.429,
+        "weather_effect": 0.0323,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0,
+        "train_delay_effect": 0.1167,
+        "traffic_effect": 0.029,
+        "metro_stress_feedback": 0.0484,
+        "incident_effect": 0.0064,
+        "capacity_damping": 0.0858
+      },
+      "drivers": [
+        "Train delay platform buildup",
+        "Metro stress increasing station-area road pressure",
+        "Parking saturation",
+        "Road congestion"
+      ]
+    },
+    {
+      "station_id": "thykoodam",
+      "station_name": "Thykoodam",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.6357,
+      "traffic_index": 0.6206,
+      "parking_occupancy": 0.6169,
+      "health_score": 0.4781,
+      "health_status": "healthy",
+      "crowding": "moderate",
+      "confidence": 0.849,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.6357,
+        "current": 0.54,
+        "historical_effect": 0.0077,
+        "time_profile": 0.429,
+        "weather_effect": 0.0266,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0117,
+        "train_delay_effect": 0.0408,
+        "traffic_effect": 0.0088,
+        "metro_stress_feedback": 0.0,
+        "incident_effect": 0.0,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Train delay platform buildup"
+      ]
+    },
+    {
+      "station_id": "tripunithura",
+      "station_name": "S. N. Junction Tripunithura",
+      "horizon_minutes": 60,
+      "passenger_occupancy": 0.6656,
+      "traffic_index": 0.702,
+      "parking_occupancy": 0.7267,
+      "health_score": 0.5274,
+      "health_status": "healthy",
+      "crowding": "moderate",
+      "confidence": 0.8545,
+      "model": "operations-ensemble-v2",
+      "components": {
+        "passenger_occupancy": 0.6656,
+        "current": 0.62,
+        "historical_effect": 0.0112,
+        "time_profile": 0.429,
+        "weather_effect": 0.0248,
+        "event_effect": 0.0,
+        "neighbour_effect": 0.0,
+        "train_delay_effect": 0.0,
+        "traffic_effect": 0.0064,
+        "metro_stress_feedback": 0.0032,
+        "incident_effect": 0.0032,
+        "capacity_damping": 0.0
+      },
+      "drivers": [
+        "Stable operating pattern"
+      ]
+    }
+  ],
+  "network_health": {
+    "score": 47.4,
+    "risk": 0.5259,
+    "critical_stations": []
+  }
+}

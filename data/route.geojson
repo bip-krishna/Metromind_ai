@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kochi Metro Blue Line Operations Corridor"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [76.3512, 10.1076],
+          [76.3458, 10.0913],
+          [76.3371, 10.0716],
+          [76.3083, 10.0261],
+          [76.2927, 9.9947],
+          [76.2833, 9.9767],
+          [76.2825, 9.9701],
+          [76.3187, 9.9674],
+          [76.3216, 9.9529],
+          [76.3505, 9.9471]
+        ]
+      }
+    }
+  ]
+}

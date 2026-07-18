@@ -1,0 +1,5 @@
+[
+  {"id": "T-101", "lat": 10.0261, "lng": 76.3083, "station_id": "edappally", "delay_minutes": 0, "direction": "Tripunithura"},
+  {"id": "T-117", "lat": 9.9767, "lng": 76.2833, "station_id": "mg_road", "delay_minutes": 3, "direction": "Aluva"},
+  {"id": "T-122", "lat": 9.9674, "lng": 76.3187, "station_id": "vyttila", "delay_minutes": 7, "direction": "Aluva"}
+]

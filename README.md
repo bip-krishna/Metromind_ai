@@ -53,7 +53,9 @@ Open `http://localhost:3000`.
 
 ## Environment
 
-Copy `.env.example` into the backend or shell environment and set `GROQ_API_KEY` to enable live copilot answers. Without a key, the backend returns deterministic local explanations.
+Copy `.env.example` to `.env` at the project root and set `GROQ_API_KEY` to enable live copilot answers. Without a key, the backend returns deterministic local explanations.
+
+Open-Meteo weather is enabled by default and requires no API key. Set `METROMIND_LIVE_WEATHER=false` to force the mock `data/weather.json` fallback. Weather severity feeds station health, predictions, alerts, and recommendations.
 
 ## Core API
 
@@ -64,6 +66,7 @@ Copy `.env.example` into the backend or shell environment and set `GROQ_API_KEY`
 - `GET /recommendations`
 - `GET /alerts`
 - `GET /weather`
+- `POST /weather/refresh`
 - `POST /simulate`
 - `POST /chat`
 - `POST /update`
@@ -75,4 +78,3 @@ Copy `.env.example` into the backend or shell environment and set `GROQ_API_KEY`
 3. Open Predictions and compare forecasted passengers, parking, traffic, and health.
 4. Run a scenario such as Heavy Rain or Football Match.
 5. Ask the AI Copilot: "Which station needs attention and why?"
-

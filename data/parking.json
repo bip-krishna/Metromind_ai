@@ -1,0 +1,12 @@
+[
+  {"station_id": "aluva", "capacity": 460, "occupied": 304},
+  {"station_id": "pulinchodu", "capacity": 120, "occupied": 64},
+  {"station_id": "companypady", "capacity": 130, "occupied": 64},
+  {"station_id": "edappally", "capacity": 330, "occupied": 290},
+  {"station_id": "kaloor", "capacity": 260, "occupied": 216},
+  {"station_id": "mg_road", "capacity": 180, "occupied": 130},
+  {"station_id": "maharajas", "capacity": 150, "occupied": 96},
+  {"station_id": "vyttila", "capacity": 520, "occupied": 484},
+  {"station_id": "thykoodam", "capacity": 170, "occupied": 99},
+  {"station_id": "tripunithura", "capacity": 290, "occupied": 206}
+]
