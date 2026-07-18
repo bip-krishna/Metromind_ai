@@ -83,6 +83,16 @@ def get_report() -> dict:
     return digital_twin.generate_report()
 
 
+@app.get("/report/ai")
+async def get_ai_report() -> dict:
+    try:
+        report = digital_twin.generate_report()
+        briefing = await ai_copilot.report(report)
+        return {**report, "briefing": briefing["answer"], "provider": briefing["provider"]}
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"AI report unavailable: {exc}") from exc
+
+
 @app.post("/weather/refresh")
 def refresh_weather() -> dict:
     return digital_twin.refresh_weather()

@@ -49,6 +49,37 @@ class AICopilotService:
         payload = response.json()
         return {"answer": payload["choices"][0]["message"]["content"], "provider": "groq"}
 
+    async def report(self, report_data: dict[str, Any]) -> dict[str, Any]:
+        if not self.api_key:
+            return {"answer": self._fallback_report(report_data), "provider": "local"}
+
+        try:
+            async with httpx.AsyncClient(timeout=20) as client:
+                response = await client.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {self.api_key}"},
+                    json={
+                        "model": self.model,
+                        "messages": [
+                            {"role": "system", "content": SYSTEM_PROMPT},
+                            {
+                                "role": "user",
+                                "content": (
+                                    "Convert this operations report JSON into a concise official control-room briefing. "
+                                    "Use sections: Situation, Assessment, Directives, Risks, Next Review. "
+                                    f"Report data: {report_data}"
+                                ),
+                            },
+                        ],
+                        "temperature": 0.2,
+                    },
+                )
+                response.raise_for_status()
+            payload = response.json()
+            return {"answer": payload["choices"][0]["message"]["content"], "provider": "groq"}
+        except httpx.HTTPError:
+            return {"answer": self._fallback_report(report_data), "provider": "local"}
+
     def _compact_context(self, state: dict[str, Any]) -> dict[str, Any]:
         return {
             "network_health": state["network_health"],
@@ -113,4 +144,24 @@ class AICopilotService:
             "Responsible unit: Operations control room with station supervisors.\n"
             "Timeline: Immediate for high-priority items; otherwise continue monitoring in the current forecast cycle.\n"
             "Rationale: Directives are derived from current alerts, predictions, and recommendations in the digital twin."
+        )
+
+    def _fallback_report(self, report_data: dict[str, Any]) -> str:
+        summary = "\n".join(f"- {line}" for line in report_data.get("summary", []))
+        directives = "\n".join(
+            f"- {item['priority']}: {item['directive']} at {item['station']} "
+            f"({item['owner']}; {item['timeline']})"
+            for item in report_data.get("directives", [])[:5]
+        )
+        watchlist = ", ".join(
+            item["station_name"] for item in report_data.get("forecast_watchlist", [])[:3]
+        )
+        return (
+            f"Situation:\n{summary or '- No summary available.'}\n\n"
+            "Assessment:\n"
+            f"- Forecast watchlist: {watchlist or 'none'}.\n"
+            f"- Critical alerts active: {len(report_data.get('critical_alerts', []))}.\n\n"
+            f"Directives:\n{directives or '- No active directives.'}\n\n"
+            "Risks:\n- Continue monitoring passenger, traffic, parking, weather, and incident pressure.\n\n"
+            "Next Review:\n- Review within the current forecast cycle or immediately if any alert escalates."
         )
