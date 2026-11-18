@@ -1,10 +1,8 @@
 # MetroMind AI
 
-MetroMind AI is an operations digital twin and AI copilot prototype for Kochi Metro Rail Limited control rooms. It follows the workflow:
+An operations digital twin and AI copilot prototype for Kochi Metro control rooms. The FastAPI backend computes predictions and recommendations. The copilot uses those results to explain what operators see in the Next.js dashboard.
 
-Observe -> Predict -> Recommend -> Explain
-
-The backend owns all calculations. The AI layer only explains the supplied digital twin data.
+[Quick start](#quick-start) · [Demo script](#demo-script) · [API reference](docs/API.md) · [Algorithms](docs/ALGORITHMS.md)
 
 ## Architecture
 
